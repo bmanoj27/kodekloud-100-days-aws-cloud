@@ -49,7 +49,7 @@ resource "aws_security_group" "devops-sg" {
   }
 
   tags = {
-    Name = "devops-sg"
+    name = "devops-sg"
   }
 }
 
@@ -68,7 +68,7 @@ resource "aws_instance" "devops-ec2" {
                 sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
                 EOF
     tags = {
-      Name = var.instance_name
+      name = var.instance_name
     }
 }
 
