@@ -91,5 +91,5 @@ resource "aws_security_group_rule" "allow_from_vpc" {
   to_port           = -1
   protocol          = "-1"
   cidr_blocks       = [data.aws_vpc.private_vpc.cidr_block]
-  security_group_id = "sg-07536973ee2788de3"
+  security_group_id = var.priv_sg_id
 }
