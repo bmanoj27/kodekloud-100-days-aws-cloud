@@ -45,3 +45,7 @@ resource "aws_key_pair" "devops-ec2" {
 data "aws_route_table" "private_route_table" {
   subnet_id = data.aws_subnet.private_subnet.id
 }
+
+variable "priv_sg_id" {
+  type = string
+}
