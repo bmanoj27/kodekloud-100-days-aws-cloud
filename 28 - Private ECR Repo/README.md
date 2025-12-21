@@ -17,3 +17,13 @@ Create a private Amazon ECR repository and push a Docker image to it using an ex
 - Push the built Docker image to the `devops-ecr` repository
 
 ---
+Learning:
+
+
+Provide a password using STDIN (--password-stdin)
+To run the docker login command non-interactively, you can set the --password-stdin flag to provide a password through STDIN. Using STDIN prevents the password from ending up in the shell's history, or log-files.
+
+The following example reads a password from a file, and passes it to the docker login command using STDIN:
+
+
+ cat ~/my_password.txt | docker login --username foo --password-stdin
