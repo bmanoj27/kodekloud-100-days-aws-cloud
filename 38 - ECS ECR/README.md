@@ -19,3 +19,6 @@ The Nautilus DevOps team is tasked with deploying a containerized application us
     Deploy the Application Using ECS Service:
         Create a service named nautilus-service on the nautilus-cluster to run the task.
         Ensure the service runs at least one task.
+
+#Since Instance or other resource names change, use sed to replace all values.
+Ex: sed -i 's/devops/xfusion/g *

@@ -1,0 +1,1 @@
+Allocate an Elastic IP  

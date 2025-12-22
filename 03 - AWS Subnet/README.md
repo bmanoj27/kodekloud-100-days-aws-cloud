@@ -1,0 +1,1 @@
+Create one subnet named devops-subnet under default VPC.
